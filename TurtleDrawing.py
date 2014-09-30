@@ -55,4 +55,5 @@ for step in range(nosides1):
         turtle.pensize(1)
         turtle.color(color2)
         turtle.forward(inlenght1)
-        turtle.right(360/nosides1)  
+        turtle.right(360/nosides1).
+#Commit to changes
