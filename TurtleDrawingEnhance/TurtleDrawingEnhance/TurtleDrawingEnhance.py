@@ -1,16 +1,26 @@
 #Learn how to use Turtle
 #Try to deploy as much Turtle function as possible
 import turtle
+import datetime
+#Get Today's date
+#currentDate = datetime.date.today()
+#print('Today is ' + currentDate)
+#Explain what this program do
+print("This is a program to draw any sharpe with multiple sides")
+print("You can ask the program to draw a triangel; square; etc..")
+print("Just let the program know how many sides you wanted to draw.")
+print("give the program any number bigger than 2")
+print("")
 #Set variables to zero
 nosides = 0
 outlength = 0
 inlength = 0
 #Define number of sides
-nosides = int(input('How many sides you wanted to draw? '))
+nosides = int(input('How many sides you wanted the program to draw? '))
 #Define the outer length of the object
-outlenght = 26
+outlenght = int(input('How long you want the sharpe be, give a number between 10 to 20.'))
 #Define the inner length of the object
-inlenght = 18
+inlenght = int(input('How long you want the inside length to be, give a number between 10 to 20.'))
 #Define the color of the pen for outer and inner object
 color1 = "blue"
 color2 = "red"
@@ -70,6 +80,6 @@ for step in range(nosides1):
         turtle.forward(inlenght1)
         turtle.right(360/nosides1)
 #This is to mess thing up!!!
-        turtle.forward(80)
+        turtle.forward(20)
 turtle.penup()
 turtle.forward(205)
